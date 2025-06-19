@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prashant's Cool Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
- .t1{    
-position: absolute ;
-color: rgb(22, 221, 201);
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
 
+      .typewriter-text {
+        overflow: hidden;
+        border-right: .15em solid white;
+        white-space: nowrap;
+        animation: typing 3s steps(30, end), blink .75s step-end infinite;
+      }
 
- }
-body{  
-    display: flex;
-align-items: center;
-justify-content: center;
-}
-.i1{ 
-    position: relative;
-    top: 70px;
-}
-.b1{ 
-    position: relative;
-    top: 70px;
-}
-.d1{ 
-color: black;
-    
-}
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink {
+        from, to { border-color: transparent }
+        50% { border-color: white; }
+      }
     </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new site </title>
-</head>
-<body> 
-
-<div class="d1"> 
-    <h1 class="t1"> 
-        Notes App
-    </h1> </div>
-    <input placeholder="Enter your thoughts " class="i1">
-    <button class="b1" onclick="st()">save  </button>
-
-    <script src="save.js"></script>
-</body>
-</html>       
-
+  </head>
+  <body class="bg-gradient-to-br from-indigo-900 via-purple-900 to-black min-h-screen flex items-center justify-center text-white">
+    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl max-w-xl text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 mb-4">
+        Hi, I'm Prashant
+      </h1>
+      <p class="text-xl md:text-2xl typewriter-text">Aspiring Coder • Thinker • Dreamer</p>
+      <p class="mt-6 text-base opacity-80">
+        Welcome to my first web project. I'm exploring HTML, Tailwind CSS, and how to make things look cool. More coming soon!
+      </p>
+      <div class="mt-8 flex justify-center gap-4">
+        <a href="#" class="px-4 py-2 bg-pink-600 hover:bg-pink-700 rounded-full text-white font-medium transition-all duration-300 shadow-md">
+          Portfolio (Coming Soon)
+        </a>
+        <a href="mailto:youremail@example.com" class="px-4 py-2 border border-white rounded-full hover:bg-white hover:text-black transition-all duration-300">
+          Contact Me
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
  
